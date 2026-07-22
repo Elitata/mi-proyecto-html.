@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Contactos</title>
+    
+    <!-- Fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-logo">GC</div>
+            <div class="brand-text">
+                <h1>Contactos</h1>
+                <p>7 contactos registrados</p>
+            </div>
+        </div>
+
+        <button class="btn-new-contact-side">
+            <i class="fa-solid fa-plus"></i> Nuevo Contacto
+        </button>
+
+        <div class="menu-main-item">
+            <div class="left">
+                <i class="fa-solid fa-user-group"></i> Todos los Contactos
+            </div>
+            <span class="badge-main">7</span>
+        </div>
+
+        <h3 class="section-title">Categorías</h3>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <div class="left"><i class="fa-regular fa-user icon-pink"></i> Solo Amigos</div>
+                <span class="badge pink">3</span>
+            </li>
+            <li class="nav-item">
+                <div class="left"><i class="fa-solid fa-user-group icon-blue"></i> Solo Familia</div>
+                <span class="badge blue">2</span>
+            </li>
+            <li class="nav-item">
+                <div class="left"><i class="fa-regular fa-star icon-purple"></i> Solo Favoritos</div>
+                <span class="badge purple">4</span>
+            </li>
+            <li class="nav-item">
+                <div class="left"><i class="fa-solid fa-circle-exclamation icon-orange"></i> Solo Emergencia</div>
+                <span class="badge orange">2</span>
+            </li>
+        </ul>
+
+        <h3 class="section-title">Papelera</h3>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <div class="left"><i class="fa-regular fa-trash-can"></i> Papelera</div>
+                <span class="badge red">1</span>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+        
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div class="top-left">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                
+                <div class="filter-box">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Filtro:</span>
+                    <strong>Todos Los Contactos</strong>
+                    <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i>
+                </div>
+
+                <div class="view-box">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Lista</span>
+                    <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i>
+                </div>
+            </div>
+
+            <div class="top-right">
+                <button class="btn-add-contact">
+                    <i class="fa-solid fa-plus"></i> Agregar Contacto
+                </button>
+                <div class="icon-btn">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="profile-widget">
+                    <div class="profile-avatar">
+                        AR
+                        <div class="status-dot"></div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT AREA -->
+        <main class="content">
+            
+            <!-- CARDS -->
+            <div class="cards-grid">
+                <div class="card card-purple">
+                    <div class="card-title">Total de Contactos</div>
+                    <div class="card-value">7</div>
+                    <div class="card-subtitle">Contactos activos en agenda</div>
+                    <div class="card-icon"><i class="fa-solid fa-user-group"></i></div>
+                </div>
+
+                <div class="card card-pink">
+                    <div class="card-title">Contactos Favoritos</div>
+                    <div class="card-value">4</div>
+                    <div class="card-subtitle"><i class="fa-solid fa-star"></i> Acceso prioritario directo</div>
+                    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <div class="card card-orange">
+                    <div class="card-title">Contactos en Papelera</div>
+                    <div class="card-value">1</div>
+                    <div class="card-subtitle">Restaurables en 1 clic</div>
+                    <div class="card-icon"><i class="fa-regular fa-trash-can"></i></div>
+                </div>
+            </div>
+
+            <!-- LIST SECTION -->
+            <div class="list-header">
+                <h2><i class="fa-solid fa-user-group"></i> Lista de Contactos (Orden Alfabetizado)</h2>
+                <p>Mostrando 7 contactos ordenados de A a Z.</p>
+            </div>
+
+            <div class="data-table">
+                <div class="table-head">
+                    <div>CONTACTO (A-Z)</div>
+                    <div>TELÉFONO</div>
+                    <div>CORREO ELECTRÓNICO</div>
+                    <div>CATEGORÍA</div>
+                </div>
+                
+                <div class="table-divider">
+                    — A —
+                </div>
+
+                <div class="table-row">
+                    <div class="col-contact">
+                        <i class="fa-regular fa-star star-btn"></i>
+                        <div class="avatar">AB</div>
+                        <div class="contact-info">
+                            <h4>Amanda Beatriz Silva <span class="tag-sos">SOS</span></h4>
+                            <p>Hospital Central</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span>+56 9</span>
+                            <span>8765 4321</span>
+                        </div>
+                    </div>
+
+                    <div class="col-email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>amanda.silva@medicina.cl</span>
+                    </div>
+
+                    <div class="col-category">
+                        <span class="tag-category">Emergencia</span>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
